@@ -36,7 +36,7 @@ int ucgensayisibul(int sayi){
 void ucgenyazdir(int sayi){
     for (int i=1; i<=sayi;i++){
         // Her adımda ilgili terimin üçgen sayısını hesaplayıp yazdırır
-        printf(" %d", ucgensayisibul(i));
+        printf("%d ", ucgensayisibul(i));
     }
 }
 void ucgensekliciz(int satirSayisi) {
@@ -47,13 +47,13 @@ void ucgensekliciz(int satirSayisi) {
         
       
         for (int bosluk = 1; bosluk <= (satirSayisi - satir); bosluk++) {
-            printf(" ");
+            printf("   ");
         }
 
     
          
         for (int sutun = 1; sutun <= satir; sutun++) {
-            printf("%d ", guncelSayi);
+            printf("%3d   ", guncelSayi);
             guncelSayi++; // Bir sonraki sayiya gecer
         }
         
